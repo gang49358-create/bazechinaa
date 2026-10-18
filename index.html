@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baze China — оригинальные вещи из Китая</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="splash"><b>B</b></div><div id="cur">B</div>
+<header><a class="logo" href="#">BAZE CHINA</a><nav><a href="#shop">Каталог</a><a href="#reviews">Отзывы</a><button id="bAcc">Войти</button><button id="bAdm" hidden>Админ</button><button id="bCart">Корзина <i id="cnt">0</i></button></nav></header>
+<main>
+<section class="hero"><div><h1>Вещи из Китая, которые выделяют</h1><p>Оригинальные кроссовки, одежда и аксессуары. Оформи заказ на сайте и подтверди его в Telegram или WhatsApp.</p><a class="btn" href="#shop">Смотреть каталог</a></div><div class="stage"><div id="stage"><div class="b3d" id="b3d"></div></div></div></section>
+<section id="shop"><h2 class="rv">Каталог</h2><div class="tabs" id="tabs"></div><div class="grid" id="grid"></div></section>
+<section id="reviews"><h2 class="rv">Отзывы покупателей</h2><div id="revs"></div>
+<form id="rf"><select name="s" aria-label="Оценка"><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option><option value="2">★★</option><option value="1">★</option></select><textarea name="t" rows="3" placeholder="Расскажи, как прошла покупка" required></textarea><button class="btn s">Оставить отзыв</button></form></section>
+</main>
+<aside id="cart" class="panel"><button class="x" id="cx" aria-label="Закрыть">✕</button><h3>Корзина</h3><div id="cartBody"></div>
+<form id="ord" hidden><input name="n" placeholder="Имя" required><input name="p" placeholder="Телефон" required><input name="a" placeholder="Город и адрес доставки" required><select name="m"><option value="tg">Подтвердить в Telegram</option><option value="wa">Подтвердить в WhatsApp</option></select><button class="btn">Оформить заказ</button></form></aside>
+<div id="modal" class="modal"><div class="wrap"><button class="x" id="mx" aria-label="Закрыть">✕</button><div id="box"></div></div></div>
+<div id="toast" role="status"></div>
+<script src="script.js"></script></body></html>
